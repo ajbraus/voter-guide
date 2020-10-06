@@ -1,5 +1,24 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .jumbotron
+    h1 Get your personalized voter guide today
+    
+  .container
+    .row 
+      .col-md-8.offset-md-2
+        .text-right
+          a(href="/endorsements/new").btn.btn-outline-dark.mb-3 New Endorsement
+        
+        .card.mb-3
+          .card-body
+            | Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+            
+            small.d-flex.justify-content-between.mt-2
+              a(href="/users/1" class="card-link").text-muted by Stefan Mueller
+        .card.mb-3
+          .card-body
+            | Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+            
+            small.d-flex.justify-content-between.mt-2
+              a(href="/users/1" class="card-link").text-muted by Stefan Mueller

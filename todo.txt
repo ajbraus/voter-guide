@@ -1,0 +1,44 @@
+
+
+"I endorse Stefan Mueller for student president at DU." Endorsement
+
+Candidate and a race
+
+CRUD Endorsements
+  - content
+
+  index (all endorsements)
+  new (form to make a new endorsement)
+  edit (edit an endorsement)
+  create button
+  delete button
+  update button
+
+CRUD users
+  users-show
+
+
+
+
+
+
+
+
+Landing page—browse endorsements, and races
+CRUD Races
+  - title, location, electionDay
+CRUD Candidates
+CRUD Users (Auth)
+Associate Users, Candidates, and Races (as Endorsements)
+
+
+Ballotpedia API?
+
+
+
+  — class president 2020
+  - class secretary 2020
+  - Federal President 2020
+  - (x50) Governor 2020
+  - Mayor of San Francisco - Nov 3 2020
+Ballot is a collection of races

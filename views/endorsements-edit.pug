@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .jumbotron
+    h1 Edit Endorsement
+    
+  .container
+    .row 
+      .col-md-8.offset-md-2
+        form(action="/endorsements" method="POST")
+          textarea.form-control
+          .text-right.mt-3
+            button(type="submit").btn.btn-primary Update Endorsement
+
+        a(href="#").btn.btn-danger Delete Endorsement
