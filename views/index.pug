@@ -9,16 +9,11 @@ block content
       .col-md-8.offset-md-2
         .text-right
           a(href="/endorsements/new").btn.btn-outline-dark.mb-3 New Endorsement
-        
-        .card.mb-3
-          .card-body
-            | Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-            
-            small.d-flex.justify-content-between.mt-2
-              a(href="/users/1" class="card-link").text-muted by Stefan Mueller
-        .card.mb-3
-          .card-body
-            | Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-            
-            small.d-flex.justify-content-between.mt-2
-              a(href="/users/1" class="card-link").text-muted by Stefan Mueller
+          
+        each e in endorsements
+          .card.mb-3
+            .card-body
+              div=e.content
+              small.d-flex.justify-content-between.mt-2
+                a(href="/users/1" class="card-link").text-muted by Stefan Mueller
+                a(href=`/endorsements/${e.id}/edit`) Edit

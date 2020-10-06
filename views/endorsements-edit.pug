@@ -7,9 +7,10 @@ block content
   .container
     .row 
       .col-md-8.offset-md-2
-        form(action="/endorsements" method="POST")
-          textarea.form-control
+        form(action=`/endorsements/${endorsement.id}?_method=PUT` method="POST")
+          textarea.form-control(name="content")=endorsement.content
           .text-right.mt-3
             button(type="submit").btn.btn-primary Update Endorsement
-
-        a(href="#").btn.btn-danger Delete Endorsement
+        
+        form(action=`/endorsements/${endorsement.id}?_method=DELETE` method="POST")
+          button(type="submit").btn.btn-danger Delete Endorsement

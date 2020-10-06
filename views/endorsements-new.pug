@@ -8,6 +8,6 @@ block content
     .row 
       .col-md-8.offset-md-2
         form(action="/endorsements" method="POST")
-          textarea.form-control
+          textarea(name="content").form-control
           .text-right.mt-3
             button(type="submit").btn.btn-primary Post Endorsement

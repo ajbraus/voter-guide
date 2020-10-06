@@ -7,10 +7,10 @@ Candidate and a race
 CRUD Endorsements
   - content
 
-  index (all endorsements)
-  new (form to make a new endorsement)
+  DONE index (all endorsements)
+  DONE new (form to make a new endorsement)
   edit (edit an endorsement)
-  create button
+  DONE create button
   delete button
   update button
 

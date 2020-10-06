@@ -1,9 +1,12 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const models  = require('../db/models');
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  res.render('index');
+  models.Endorsement.findAll({ order: [['updatedAt', 'DESC']] }).then(endorsements => {
+    res.render('index', { endorsements });
+  })
 });
 
 module.exports = router;
